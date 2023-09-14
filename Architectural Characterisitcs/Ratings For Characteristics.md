@@ -3,37 +3,37 @@
 
 | Characterisitc | Rating |
 |--|--|
-|Security | -- |
-|Maintainability|--|
-|Simplicity | -- |
-|Feasability  | -- |
-|Testability|--|
-|Deployability | -- |
-|Accesability| -- |
+|Security |
+|Maintainability|
+|Simplicity |
+|Feasability  | 
+|Testability|
+|Deployability | 
+|Accesability| 
 
 ### Driving Characteristics
 
 | Characterisitc |  Rating |
 |--|--|
-| Reliability | -- |
-| Performance | -- |
-| Scalability | -- |
-| Extensability | -- |
-| Usability | -- |
-| Availability | -- |
-| Responsiveness | -- |
-| Fault Tolerance | -- |
-| Interoperability | -- |
-| Evolvability | -- |
-| Elasticity | -- |
-| Integration | -- |
+| Interoperability | ***** |
+| Availability | ***** |
+| Performance | ** |
+| Scalability | **** |
+| Extensability | ** |
+| Usability | **** |
+| Responsiveness | *** |
+| Fault Tolerance | **** |
+| Elasticity | ** |
+| Configurability|**|
 
 ### Other Characteristics Considered
 |Characterisitc|Rating|
 |--|--|
-|Agility|--|
-|Abstraction|--|
-|Configurability|--|
-|Cost|--|
-|Domain Partitioning|--|
-|Work Flow|--|
+| Reliability | -- |
+| Agility|--|
+| Abstraction|--|
+| Cost|--|
+| Domain Partitioning|--|
+| Work Flow|--|
+| Integration | -- |
+| Evolvability | -- |
