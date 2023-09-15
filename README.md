@@ -68,47 +68,31 @@ This section describes key stakeholders of the system and their architectural co
 ### Functional Requirements
 
 #### Use Cases are defined below for the Traveller:
-
 * **UC-1**: **Traveller registration**:
     - Traveller register their profile through an external identity provider (SH-1)
-
 ![UC-1: Traveller registration](Images/Sequence%20diagrams%20-%20Sequence-Registration.png "Traveller registration")
-
 * **UC-2**: **Traveller Login**:
 	- Traveller login to the Road Warrior through an external identity provider (SH-1)
-
 ![UC-1: Traveller Login](Images/Sequence%20diagrams%20-%20Sequence-Login.png "Traveller Login")
-
 * **UC-3**: **View Dashboard**:
 	- Traveller views their existing reservations organised by trip (SH-1)
-
  ![UC-1: View Dashboard](Images/Sequence%20diagrams%20-%20Sequence-ViewDashboard.png "View Dashboard")
- 
 * **UC-4**: **Search for a reservation item**:
 	- Traveller searches for a reservation item (airline, car rental or hotel) using search criteria (SH-1)
-
 ![UC-1: Search for a reservation item](Images/Sequence%20diagrams%20-%20Sequence-SearchReservationItem.png "Search for a reservation item")
-
 * **UC-5**: **Edit Trip Information**:
 	- Traveller is able to add, update, or delete existing reservations manually (SH-1)
-	
+![UC-1: Edit Trip Information](Images/Sequence%20diagrams%20-%20Sequence-TravellerEditTrip.png "Edit Trip Information")
 * **UC-6**: **Share Trip information to Social Media**:
 	- Traveller shares their trip information by interfacing with standard social media sites (SH-1)
-
-![UC-1: Share Trip information to Social Media](Images/Sequence%20diagrams%20-%20Sequence-PublishToSocialMedia.png "Share Trip information to Social Media")
-
+![UC-1: Share Trip information to Social Media](Images/Sequence%20diagrams%20-%20Sequence-TravellerEditTrip.png "Share Trip information to Social Media")
 * **UC-7**: **Views Summary Report**:
 	- Traveller view summary of key metrics for the year via email (SH-1)
 
-
 #### Use Cases are defined below for the External Systems
-
-	
 * **UC-8**: **Refresh Trip Information **:
-	- Trip information should be updated as soon as possible when we are notified by an external system that a change has occurred. (SH-3);
-	
-
-
+	- Trip information should be updated as soon as possible when we are notified by an external system that a change has occurred. (SH-3)
+![UC-1: Refresh Trip Information](Images/Sequence%20diagrams%20-%20Sequence-TravellerEditTrip.png "Refresh Trip Information")
 ### Architecture Characteristics
 
 #### Implicit Characteristics
