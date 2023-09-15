@@ -5,8 +5,6 @@
 |--|--|
 |Security |
 |Maintainability|
-|Simplicity |
-|Feasability  | 
 |Testability|
 |Deployability | 
 |Accesability| 
@@ -37,3 +35,5 @@
 | Work Flow|--|
 | Integration | -- |
 | Evolvability | -- |
+| Simplicity |
+| Feasability  | 
