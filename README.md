@@ -128,6 +128,9 @@ There are architectural properties that we believe all applications must have by
     - We will cover integration, manual and unit tests at a minimum.
     - We will also more generally test security and performance.
 
+**Observability**
+    - We plan to collect telemetry data (metrics, logs and traces) using the Open Telemetry standards for the purposes of monitoring the performance, application usage and error logging.
+
 **Deployability**
     - We need to ensure we can achieve continuous deployment and testing as a minimum for our product. 
     - Can deploy new versions in a controlled manner to ensure stability before we deploy to all regions.
@@ -231,12 +234,12 @@ The architecture is built around two main domains that have been discovered duri
 > *Why is more important than how.  
 Second Law of Software Architecture*
 
- - [ADR-001](Architectural Decision Records/001 - Analysis And Reporting.md) Analysis And Reporting.
- - [ADR-002](Architectural Decision Records/002 - Traveller Search.md) Traveller Search.
- - [ADR-003](Architectural Decision Records/003 - Social Media Publishing.md) Social Media Publishing.
- - [ADR-004](Architectural Decision Records/004 - Supported Email Protocols.md) Supported Email Protocols.
- - [ADR-005](Architectural Decision Records/005 - Email Analyser.md) Email Analyser.
- - [ADR-006](Architectural Decision Records/006 - IdentityProvider.md) Identity Provider.
+ - [ADR-001](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/Architectural Decision Records/001 - Analysis And Reporting.md) Analysis And Reporting.
+ - [ADR-002](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/Architectural Decision Records/002 - Traveller Search.md) Traveller Search.
+ - [ADR-003](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/Architectural Decision Records/003 - Social Media Publishing.md) Social Media Publishing.
+ - [ADR-004](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/Architectural Decision Records/004 - Supported Email Protocols.md) Supported Email Protocols.
+ - [ADR-005](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/Architectural Decision Records/005 - Email Analyser.md) Email Analyser.
+ - [ADR-006](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/Architectural Decision Records/006 - IdentityProvider.md) Identity Provider.
 
 
 
