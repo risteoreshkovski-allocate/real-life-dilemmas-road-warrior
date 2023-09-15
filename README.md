@@ -3,10 +3,10 @@
 
 **Team Members: Riste Oreshkovski; Andrej Manev; Jovan Nikoloski; Elena Aleksovska; Sarah Webb**
 ## Table of Contents
-<img align="right" width="210" height="368" src="Images/confused.jpg"/>
+<img align="right" width="247" height="204" src="Images/confused.jpg"/>
+
 - [Requirements](#requirements)  
     - [Introduction](#introduction)
-    
     - [Business Requirements](#business-requirements)
     - [Functional Requirements](#functional-requirements)
     - [Architecture Characteristics Requirements](#architecture-characteristics-requirements)
@@ -22,12 +22,11 @@
 - [Transition Architecture](#transition-architecture)
 - [Architecture Decision Records](#architecture-decision-records)
 
-
 ## Requirements
 
 ### Business Requirements
 ** Introduction**
-A new startup "Road Warrior" wants to build the next generation online trip management dashboard to allow travelers to see all of their existing reservations organized by trip either online (web) or through their mobile device
+A new startup "Road Warrior" wants to build the next-generation online trip management dashboard to allow travelers to see all of their existing reservations organized by trip either online (web) or through their mobile device
 -   users quarter million active users/week
 -   total users: 15 million (user accounts)
 
