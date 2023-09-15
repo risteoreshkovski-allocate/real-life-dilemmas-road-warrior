@@ -8,7 +8,6 @@
 <img align="right" width="247" height="204" src="Images/confused.jpg"/>
 
 - [Requirements](#requirements)  
-    - [Introduction](#introduction)
     - [Business Requirements](#business-requirements)
     - [Architecture Characteristics](#architecture-characteristics)
     - [Constraints](#constraints)
@@ -16,14 +15,13 @@
 - [Architecture](#architecture)  
     - [System Context](#system-context)  
     - [Containers](#containers)  
-    - [Process Views](#process-views)  
+    - [Use Cases](#use-cases)  
     - [Deployment](#deployment)  
 - [Architecture Decision Records](#architecture-decision-records)
 
 ## Requirements
 
 ### Business Requirements
-** Introduction**
 A new startup "Road Warrior" wants to build the next-generation online trip management dashboard to allow travelers to see all of their existing reservations organized by trip either online (web) or through their mobile device
 -   users quarter million active users/week
 -   total users: 15 million (user accounts)
@@ -135,9 +133,9 @@ As there are 15 million user accounts we should be prepared to support a higher 
 **Performance | Rating: 2 STARS**
 - Travel updates must be presented in the app within 5 minutes of generation by the source
 
-**Configurability | Rating: 2 Stars**
+**Configurability | Rating: 2 STARS**
 - Shall allow the user to set preferred agency and mail providers. 
-- There is not a major requirement to store any other user preferences or settings. 
+- There is no major requirement to store any other user preferences or settings. 
 
 #### Other Characteristics Considered
 We considered the characteristics below but they were not relevant enough to rate or covered under another characteristic umbrella.
@@ -176,39 +174,41 @@ The architecture is built around two main domains that have been discovered duri
  
 ![Containers](Images/High%20Level%20Component%20Diagram%20%20-%20C4_Container.png "Containers")
 
-### Process View
+### Use Cases
 
-#### Use Cases are defined below for the Traveller:
+#### Traveller Use Cases:
 * **UC-1**: **Traveller registration**:
     - Traveller register their profile through an external identity provider (SH-1)
 ![UC-1: Traveller registration](Images/Sequence%20diagrams%20-%20Sequence-Registration.png "Traveller registration")
 * **UC-2**: **Traveller Login**:
 	- Traveller login to the Road Warrior through an external identity provider (SH-1)
-![UC-1: Traveller Login](Images/Sequence%20diagrams%20-%20Sequence-Login.png "Traveller Login")
+![UC-2: Traveller Login](Images/Sequence%20diagrams%20-%20Sequence-Login.png "Traveller Login")
 * **UC-3**: **View Dashboard**:
 	- Traveller views their existing reservations organised by trip (SH-1)
- ![UC-1: View Dashboard](Images/Sequence%20diagrams%20-%20Sequence-ViewDashboard.png "View Dashboard")
+ ![UC-3: View Dashboard](Images/Sequence%20diagrams%20-%20Sequence-ViewDashboard.png "View Dashboard")
 * **UC-4**: **Search for a reservation item**:
 	- Traveller searches for a reservation item (airline, car rental or hotel) using search criteria (SH-1)
-![UC-1: Search for a reservation item](Images/Sequence%20diagrams%20-%20Sequence-SearchReservationItem.png "Search for a reservation item")
+![UC-4 Search for a reservation item](Images/Sequence%20diagrams%20-%20Sequence-SearchReservationItem.png "Search for a reservation item")
 * **UC-5**: **Edit Trip Information**:
 	- Traveller is able to add, update, or delete existing reservations manually (SH-1)
-![UC-1: Edit Trip Information](Images/Sequence%20diagrams%20-%20Sequence-TravellerEditTrip.png "Edit Trip Information")
+![UC-5: Edit Trip Information](Images/Sequence%20diagrams%20-%20Sequence-TravellerEditTrip.png "Edit Trip Information")
 * **UC-6**: **Share Trip information to Social Media**:
 	- Traveller shares their trip information by interfacing with standard social media sites (SH-1)
-![UC-1: Share Trip information to Social Media](Images/Sequence%20diagrams%20-%20Sequence-TravellerEditTrip.png "Share Trip information to Social Media")
-* **UC-7**: **Views Summary Report**:
+![UC-6: Share Trip information to Social Media](Images/Sequence%20diagrams%20-%20Sequence-PublishToSocialMedia.png "Share Trip information to Social Media")
+* **UC-7**: **Views Summary Report and analytical data**:
 	- Traveller view summary of key metrics for the year via email (SH-1)
+ 	- Data Analysts view analytical data for various purposes - travel trends, locations, airline and hotel vendor preferences, cancellation and update frequency, and so on. (SH-2)
+![UC-7: Views Summary Report and analytical data](Images/Sequence%20diagrams%20-%20Sequence-Reporting.png "Views Summary Report and analytical data")
 
-#### Use Cases are defined below for the External Systems
+#### External Systems Use Cases
 * **UC-8**: **Refresh Trip Information**:
 	- Trip information should be updated as soon as possible when we are notified by an external system that a change has occurred. (SH-3)
-![UC-1: Refresh Trip Information](Images/Sequence%20diagrams%20-%20Sequence-TravellerEditTrip.png "Refresh Trip Information")
+![UC-8: Refresh Trip Information](Images/Sequence%20diagrams%20-%20Sequence-ExternalTravelSystemChange.png "Refresh Trip Information")
+
 ### Deployment
-
-![Containers](images/deployment.jpg "Deployment") ADD DIAGRAM HERE
-
-
+We choose to go with cloud-based infrastructure.
+We have chosen AWS as an infrastructure platform for deployment (we are going to use Infrastructure as a Code (IaaC) eg: Terraform to manage the infrastructure via code)
+![Deployment](Images/High%20Level%20Component%20Diagram%20%20-%20Infrastracture%20diagram.png "Deployment")
 
 ## Architecture Decision Records
 
