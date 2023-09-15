@@ -5,8 +5,8 @@
 
 ## Contents
 <img align="right" width="210" height="368" src="images/confused.jpg">
-- [Requirements](#requirements)  
-    - [Introduction](#introduction)
+* [Requirements](#requirements)  
+    * [Introduction](#introduction)
     - [Business Requirements](#business-requirements)
     - [Functional Requirements](#functional-requirements)
     - [Architecture Characteristics Requirements](#architecture-characteristics-requirements)
