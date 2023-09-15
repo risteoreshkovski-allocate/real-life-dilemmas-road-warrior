@@ -215,10 +215,10 @@ We have chosen AWS as an infrastructure platform for deployment (we are going to
 > *Why is more important than how.  
 Second Law of Software Architecture*
 
- - [ADR-001](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/ArchitecturalDecisionRecords/001 - Analysis And Reporting.md) Analysis And Reporting.
- - [ADR-002](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/ArchitecturalDecisionRecords/002 - Traveller Search.md) Traveller Search.
- - [ADR-003](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/ArchitecturalDecisionRecords/003 - Social Media Publishing.md) Social Media Publishing.
- - [ADR-004](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/ArchitecturalDecisionRecords/004 - Supported Email Protocols.md) Supported Email Protocols.
- - [ADR-005](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/ArchitecturalDecisionRecords/005 - Email Analyser.md) Email Analyser.
- - [ADR-006](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/ArchitecturalDecisionRecords/006 - IdentityProvider.md) Identity Provider.
+ - [ADR-001] [Analysis And Reporting](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/blob/main/ArchitecturalDecisionRecords/001%20-%20Analysis%20And%20Reporting.md)
+ - [ADR-002] [Traveller Search](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/blob/main/ArchitecturalDecisionRecords/002%20-%20Traveller%20Search.md)
+ - [ADR-003] [Social Media Publishing](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/blob/main/ArchitecturalDecisionRecords/003%20-%20Social%20Media%20Publishing.md) 
+ - [ADR-004] [Supported Email Protocols](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/blob/main/ArchitecturalDecisionRecords/004%20-%20Supported%20Email%20Protocols.md)
+ - [ADR-005] [Email Analyser](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/blob/main/ArchitecturalDecisionRecords/005%20-%20Email%20Analyser.md)
+ - [ADR-006] [Identity Provider](https://github.com/risteoreshkovski-allocate/real-life-dilemmas-road-warrior/blob/main/ArchitecturalDecisionRecords/006%20-%20IdentityProvider.md)
 
