@@ -3,7 +3,7 @@
 
 **Team Members: Riste Oreshkovski; Andrej Manev; Jovan Nikoloski; Elena Aleksovska; Sarah Webb**
 ## Table of Contents
-<img align="right" width="210" height="368" src="Images/confused.jpg">
+<img align="right" width="210" height="368" src="Images/confused.jpg"/>
 - [Requirements](#requirements)  
     - [Introduction](#introduction)
     
