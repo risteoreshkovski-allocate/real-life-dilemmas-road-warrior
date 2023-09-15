@@ -2,8 +2,8 @@
 # Real Life Dilemmas - Road Warrior Travel Architecture
 
 **Team Members: Riste Oreshkovski; Andrej Manev; Jovan Nikoloski; Elena Aleksovska; Sarah Webb**
+
 ## Table of Contents
-<img align="right" width="247" height="204" src="Images/confused.jpg"/>
 
 ## Contents
 <img align="right" width="210" height="368" src="Images/confused.jpg"/>
@@ -92,7 +92,7 @@ This section describes key stakeholders of the system and their architectural co
 	- Traveller view summary of key metrics for the year via email (SH-1)
 
 #### Use Cases are defined below for the External Systems
-* **UC-8**: **Refresh Trip Information **:
+* **UC-8**: **Refresh Trip Information**:
 	- Trip information should be updated as soon as possible when we are notified by an external system that a change has occurred. (SH-3)
 ![UC-1: Refresh Trip Information](Images/Sequence%20diagrams%20-%20Sequence-TravellerEditTrip.png "Refresh Trip Information")
 ### Architecture Characteristics
