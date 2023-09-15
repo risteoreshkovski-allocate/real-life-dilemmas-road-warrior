@@ -4,7 +4,7 @@
 **Team Members: Riste Oreshkovski; Andrej Manev; Jovan Nikoloski; Elena Aleksovska; Sarah Webb**
 
 ## Contents
-<img align="right" width="210" height="368" src="images/badge.png">
+<img align="right" width="210" height="368" src="images/confused.jpg">
 - [Requirements](#requirements)  
     - [Introduction](#introduction)
     - [Business Requirements](#business-requirements)
@@ -94,7 +94,7 @@ This section describes key stakeholders of the system and their architectural co
 	- Traveller view summary of key metrics for the year via email (SH-1);
 
 
-#### Use Cases are defined below for the Exteral Systems
+#### Use Cases are defined below for the External Systems
 
 	
 * **UC-8**: **Refresh Trip information **:
