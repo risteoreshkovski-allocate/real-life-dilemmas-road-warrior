@@ -5,9 +5,8 @@
 
 ## Table of Contents
 
-## Contents
-
 <img align="right" width="247" height="204" src="Images/confused.jpg"/>
+
 - [Requirements](#requirements)  
     - [Introduction](#introduction)
     - [Business Requirements](#business-requirements)
