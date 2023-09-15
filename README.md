@@ -68,7 +68,6 @@ A new startup "Road Warrior" wants to build the next generation online trip mana
 * **UC-5**: **External Travel System Change**:
  - administrator maintains internal user accounts (SH-1);
 
-### Architecture Characteristics Requirements
 ### Architecture Characteristics
 
 #### Implicit Characteristics
@@ -99,9 +98,9 @@ There are the architectural properties that we believe all applications must hav
 These are the characteristics that we consider important to the development of this specific system based on careful analysis of the business requirements. The rating is from 1 - 5 where 5 is considered the most desirable characteristic and 1 the least.
 
 **Interoperability | Rating: 5 STARS**
-    - Information from external systems needs to be displayed as part of the trip information. This may include car rentals , airlines, hotels and travel details. The interfaces must be able to meaningfully exchange and interpret information from external systems.
-    - User should be able to interface with standard social media sites and share with other targeted people (manager, travelling companion)
-    - Integrates with existing travel systems such as Sabre and Apollo
+- Information from external systems needs to be displayed as part of the trip information. This may include car rentals , airlines, hotels and travel details. The interfaces must be able to meaningfully exchange and interpret information from external systems.
+- User should be able to interface with standard social media sites and share with other targeted people (manager, travelling companion)
+- Integrates with existing travel systems such as Sabre and Apollo
 
 ** Availability | Rating: 5 STARS**
 - The system must be highly available with users able to always access the system. 
@@ -142,31 +141,19 @@ As there are 15 million use account we should be prepared to support higher numb
 - There is now major requirement to store any other user preferences or settings. 
 
 #### Other Characteristics Considered
-We considered the characteristics below but they were not considered relevant enough to rate or covered under other characteristics
+We considered the characteristics below but they were not relevant enough to rate or covered under anotherother characteristic umbrella.
 
 Reliability, Agility, Abstraction, Cost, Domain Partitioning, Work Flow, Integration, Evolvability, Simplicity, Feasability
 
 ### Constraints
-The business is a startup so there may be limited budget. 
+- The business is a startup so there may be a limited budget. 
+- The maturity and capability of the development teams will be low, so limited knowledge of the travel domain.
 
 ### Assumptions
-* **ASM-1**: The mobile app is a part of the system and can be changed.
-* **ASM-2**: Helpdesk assistants (aka Call Center) need access to the ticket sub-system and some customer information (contacts, maybe support plan). These are also users of the system although are not listed in the "Main Four Users" of the original requirements.
-* **ASM-3**: Call tracking system is out of scope of Sysops Squad system.
-* **ASM-4**: The company stores customer credit card information locally and does not interoperate with a 3-party authority (like authorize.net in the US).
+* **Support for Travel Types-1**: We are not expected to support other forms of travel such as buses or trains for the MVP.
+* **Support for Payments-2**: The system will not be required to store any customer credit card information locally or maintain any payment details.
 
-## Baseline Architecture
-This section describes the architecture of the current ticket system.
-
-Please note that all views are documented in [C4 model](https://c4model.com) style, although only System Context, Container and dynamic views are presented. The most diagrams use informal notation style. All diagrams are supplied with a key explaining meaning of each shape on the diagram.
-
-The current ticket system demonstrates very poor characteristics of availability, maintainability, deployability and performance. Our goal is to design a new system that solves aforementioned problems.
-
-The following diagram depicts the containers diagram of the current ticket system:
-
-![Baseline Architecture](images/baseline.jpg "Baseline Architecture")
-
-## Target Architecture
+## Architecture
 This section describes the target software architecture.
 
 Please note that all views are documented in [C4 model](https://c4model.com) style, although only System Context, Container and dynamic views are presented. The most diagrams use informal notation style. All diagrams are supplied with a key explaining meaning of each shape on the diagram.
