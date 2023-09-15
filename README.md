@@ -1,9 +1,12 @@
 
 # Real Life Dilemmas - Road Warrior Travel Architecture
+
+**Team Members: Riste Oreshkovski; Andrej Manev; Jovan Nikoloski; Elena Aleksovska; Sarah Webb**
+
 ## Contents
 <img align="right" width="210" height="368" src="images/badge.png">
 - [Requirements](#requirements)  
-	- [Introduction](#introduction)
+    - [Introduction](#introduction)
     - [Business Requirements](#business-requirements)
     - [Functional Requirements](#functional-requirements)
     - [Architecture Characteristics Requirements](#architecture-characteristics-requirements)
@@ -18,6 +21,7 @@
     - [Deployment](#deployment)  
 - [Transition Architecture](#transition-architecture)
 - [Architecture Decision Records](#architecture-decision-records)
+
 
 ## Requirements
 
