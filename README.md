@@ -1,7 +1,7 @@
 
 # Real Life Dilemmas - Road Warrior Travel Architecture
 
-**Team Members: Riste Oreshkovski; Andrej Manev; Jovan Nikoloski; Elena Aleksovska; Sarah Webb**
+**Team Members: Riste Oreshkovski; Andrej Manev; Jovan Nikoloski; Elena Aleksovska Stefanovska; Sarah Webb**
 
 ## Table of Contents
 
@@ -10,12 +10,10 @@
 - [Requirements](#requirements)  
     - [Introduction](#introduction)
     - [Business Requirements](#business-requirements)
-    - [Functional Requirements](#functional-requirements)
     - [Architecture Characteristics](#architecture-characteristics)
     - [Constraints](#constraints)
     - [Assumptions](#assumptions)
 - [Architecture](#architecture)  
-    - [Use Case Model](#use-case-model)  
     - [System Context](#system-context)  
     - [Containers](#containers)  
     - [Process Views](#process-views)  
@@ -52,7 +50,6 @@ A new startup "Road Warrior" wants to build the next-generation online trip mana
 -   Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)
 
 ### Stakeholders
-
 This section describes key stakeholders of the system and their architectural concerns.
 
 * **SH-1**: **Traveller** (availability, performance, scalability, fault-tolerant, usability and security)
@@ -60,14 +57,12 @@ This section describes key stakeholders of the system and their architectural co
     - Should be able to add, update, or delete existing reservations manually.
 	- Should be able to share their trip information by interfacing with standard social media sites or allowing targeted people to view their trip.
 
-* **SH-2**: **Data analyst** (performance, scalability, fault-tolerant, Secure)
+* **SH-2**: **Data analyst** (performance, scalability, fault-tolerant, security)
 	- Must be able to derive a given set of metrics from the data (trends, preferences, locations, hotels) 
 	- Provide an end-of-year summary report template which can be displayed for each user
 
-* **SH-3**: **External Systems** (fault-tolerant, secure)
+* **SH-3**: **External Systems** (fault-tolerant, security)
 	- Existing agency and travel APIs must remain stable and accessible in line with our agreed levels of service.
-
-### Functional Requirements
 
 ### Architecture Characteristics
 
@@ -76,9 +71,9 @@ There are architectural properties that we believe all applications must have by
 
 **Security**
      - Store personal information and information provided by integrated systems securely. 
-     - Must meet General Data Protection regulations or equivalent standards as a minimum.
+     - Must meet General Data Protection Regulations or equivalent standards as a minimum.
      - Ensure only specified individuals can view trips and edit trip information.
-      - Ensure only identified users can access the system.
+     - Ensure only identified users can access the system.
 
 **Maintainability**
     - Implemented with a clean architecture style and adhered to agreed coding standards to ensure that the code can be easily maintained and extended.
@@ -102,7 +97,7 @@ There are architectural properties that we believe all applications must have by
 These are the characteristics that we consider important to the development of this specific system based on careful analysis of the business requirements. The rating is from 1 - 5 where 5 is considered the most desirable characteristic and 1 the least.
 
 **Interoperability | Rating: 5 STARS**
-- Information from external systems needs to be displayed as part of the trip information. This may include car rentals , airlines, hotels and travel details. The interfaces must be able to meaningfully exchange and interpret information from external systems.
+- Information from external systems needs to be displayed as part of the trip information. This may include car rentals, airlines, hotels and travel details. The interfaces must be able to meaningfully exchange and interpret information from external systems.
 - User should be able to interface with standard social media sites and share with other targeted people (manager, travelling companion)
 - Integrates with existing travel systems such as Sabre and Apollo
 
@@ -116,7 +111,7 @@ These are the characteristics that we consider important to the development of t
 - Grouping should be used to show trip information and archived once the trip is over to make it easier to see current tips. 
 - We should endeavour to provide the richest user interface possible. 
 - We need to make it easy to share with social media sites. 
-- Make Available for mobile and web to allow users to access the site from from a laptop or phone.
+- Make Available for mobile and web to allow users to access the site from a laptop or phone.
 
 **Fault Tolerance | Rating: 4 STARS**
 - If one of the applications we interface with is inaccessible it should not affect the overall operations of the system and the user should be made aware that information from this source is currently unavailable. 
@@ -131,7 +126,7 @@ These are the characteristics that we consider important to the development of t
 - Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)
 
 **Elasticity | Rating: 2 STARS**
-As there are 15 million user accounts we should be prepared to support a higher number of users than a quarter million on certain occasions (sudden bursts) however it is not predicted this should happen in the near future. 
+As there are 15 million user accounts we should be prepared to support a higher number of users than a quarter million on certain occasions (sudden bursts) however it is not predicted this should happen in near future. 
 
 **Extensibility | Rating: 2 STARS**
 - can scan new email providers
@@ -151,7 +146,7 @@ Reliability, Agility, Abstraction, Cost, Domain Partitioning, Work Flow, Integra
 
 ### Constraints
 - The business is a startup so there may be a limited budget. 
-- The maturity and capability of the development teams will be low, so limited knowledge of the travel domain.
+- The maturity and capability of the development teams will be low, so there might be a limited knowledge of the travel domain.
 
 ### Assumptions
 * **Support for Travel Types-1**: We are not expected to support other forms of travel such as buses or trains for the MVP.
@@ -165,18 +160,11 @@ This section describes the target software architecture.
 
 Please note that all views are documented in [C4 model](https://c4model.com) style, although only System Context, Container and dynamic views are presented. Most diagrams use an informal notation style. All diagrams are supplied with a key explaining the meaning of each shape on the diagram.
 
-### Use Case Model
-
-The following diagram shows the mapping of architecture characteristics requirements on the key use cases based on discovered [requirements](Requirements.md):
-
-![Use Case Model](images/use-case-model.jpg "Use Case Model")
-
-
 ### System Context
 
 The system context diagram below depicts key users of the system and its external dependencies:
 
-![System Context](images/system-context.jpg "System Context") ADD DIAGRAM HERE
+![System Context](Images/High%20Level%20Component%20Diagram%20%20-%20C4_Context.png "System Context")
 
 ### Containers
 
@@ -186,7 +174,7 @@ The architecture is built around two main domains that have been discovered duri
  - traveler-facing services, such as trip viewing and amending reservations;
  - data analytics, provision of data for reporting and defining metrics;
  
-![Containers](images/containers.jpg "Containers") ADD DIAGRAM HERE
+![Containers](Images/High%20Level%20Component%20Diagram%20%20-%20C4_Container.png "Containers")
 
 ### Process View
 
