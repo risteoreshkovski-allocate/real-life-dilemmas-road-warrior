@@ -1,13 +1,5 @@
-## Vision
-### Prelude
-### Vision
-### Business Requirements
-### Architectural Characteristics
-### Strategy
-### Architecture
-### Diagrams
-### Architectural Desision Records
-******************************************************
+
+# Real Life Dilemmas - Road Warrior Travel Architecture
 ## Contents
 <img align="right" width="210" height="368" src="images/badge.png">
 - [Requirements](#requirements)  
@@ -55,18 +47,56 @@ A new startup "Road Warrior" wants to build the next generation online trip mana
 -   Users must be able to access the system at all times (max 5 minutes per month of unplanned downtime)
 -   Travel updates must be presented in the app within 5 minutes of generation by the source
 -   Response time from web (800ms) and mobile (First-contentful paint of under 1.4 sec)
-#### Functional Requirements
 
-* **UC-1**: **Search Reservation Item**:
-    - administrator maintains internal user accounts (SH-1);
-* **UC-2**: **View Dashboard**:
-    - administrator maintains internal user accounts (SH-1);
-* **UC-3**: ** Publish To Social Media**:
-    - administrator maintains internal user accounts (SH-1);
-* **UC-4**: **Traveller Edit Trip**:
-    - administrator maintains internal user accounts (SH-1);
-* **UC-5**: **External Travel System Change**:
- - administrator maintains internal user accounts (SH-1);
+### Stakeholders
+
+This section describes key stakeholders of the system and their architectural concerns.
+
+* **SH-1**: **Traveller** (availability, performance, scalability, fault tolerant, usability and secure)
+	- Must be able to see all of their existing reservations organized by trip.
+    - Should be able to add, update, or delete existing reservations manually.
+	- Should be able to share their trip information by interfacing with standard social media sites or allowing targeted people to view their trip.
+
+* **SH-2**: **Data analyst** (performance, scalability, fault tolerant, Secure)
+	- Must be able to derive a given set of metrics from the data (trends, preferences, locations, hotels) 
+	- Provide end of year summary report template which can be displayed for each user
+
+* **SH-3**: **External Systems** (fault tolerant, secure)
+	- Existing agency and travel APIs must remain stable and accessible in line with our agreed levels of service.
+
+### Functional Requirements
+
+#### Use Cases are defined below for the Traveller:
+
+* **UC-1**: **Traveller registration**:
+    - Traveller register their profile through external identity provider (SH-1);
+	
+* **UC-2**: **Traveller Login**:
+	- Traveller login to the Road Warrior through external identity provider (SH-1);
+
+* **UC-3**: **View Dashboard**:
+	- Traveller views their existing reservations organised by trip (SH-1);
+	
+* **UC-4**: **Search for a reservation item**:
+	- Traveller searchs for reservation item (airline, car rental or hotel) using search criteria (SH-1);
+
+* **UC-5**: **Edit Trip information**:
+	- Traveller is able to add, update, or delete existing reservations manually (SH-1);
+	
+* **UC-6**: **Share Trip information to Social Media**:
+	- Traveller shares their trip information by interfacing with standard social media sites (SH-1);
+
+* **UC-7**: **Views Summary Report**:
+	- Traveller view summary of key metrics for the year via email (SH-1);
+
+
+#### Use Cases are defined below for the Exteral Systems
+
+	
+* **UC-8**: **Refresh Trip information **:
+	- Trip information should be updated as soon as possible when we are notified by an external systems that a change has occured. (SH-3);
+	
+
 
 ### Architecture Characteristics
 
@@ -152,6 +182,9 @@ Reliability, Agility, Abstraction, Cost, Domain Partitioning, Work Flow, Integra
 ### Assumptions
 * **Support for Travel Types-1**: We are not expected to support other forms of travel such as buses or trains for the MVP.
 * **Support for Payments-2**: The system will not be required to store any customer credit card information locally or maintain any payment details.
+* **Time to Market-3**: No deadline for time to market has been given so we can define an appropriate timeline for the architecture we choose.
+* **Storage Personal Identifiable Information-4**: This will not be stored directly in our system and OKTA(Auth0) used for authentication purposes
+
 
 ## Architecture
 This section describes the target software architecture.
