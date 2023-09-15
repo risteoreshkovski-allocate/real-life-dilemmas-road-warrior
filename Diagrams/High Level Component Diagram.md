@@ -1,1 +1,0 @@
-<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embedded/5b7f8b7e-c1b3-4169-b3b5-ac2c0475fe94" id="7mhuT937NegF"></iframe></div>
