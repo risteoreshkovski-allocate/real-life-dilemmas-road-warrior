@@ -3,10 +3,13 @@
 Pending
 
 ### Context
-Users should also be able to share their trip information by interfacing with standard social media sites. We will need to limit the number of API's that we support.
+Users should also be able to share their trip information by interfacing with standard social media sites. 
 
 ### Decision
-We will utilise X, Meta and LinkedIn API's in order to support publishing to Facebook, Instragram, X and LinkedIn.
+ - We will support publishing to Facebook, Instagram, X and LinkedIn.
+ - We will not be exposing links publicly.
+ - We will prepare the content at a point in time and provide a link that navigates the traveller to the selected Social Media site.
+ - The traveller can then post the prepared content directly on the selected Social Media site.
 
 ### Consequences
-There may be some users which use less common social media sites which will not be able to use the functionality however by consuming these API's we hope to cover the majority.
+Because we are not sharing a direct link to the traveller's trip, the information in the Social Media post can become outdated in case of changes on the trip afterwards.
